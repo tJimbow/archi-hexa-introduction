@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="800" height="550">
   <defs>
     <style>
       .box { fill: #2d3748; stroke: #4a5568; stroke-width: 2; }
@@ -55,7 +55,7 @@
   <text x="790" y="195" class="text">• ProgramSearch</text>
   <text x="790" y="215" class="text">• EntityGet</text>
   <text x="790" y="235" class="text">• ProgramCancel</text>
-  <text x="790" y="255" class="text">• (Axios HTTP)</text>
+  <text x="790" y="255" class="text-small" font-style="italic">→ utilisent Axios</text>
 
   <!-- DOMAIN (HEXAGONE) -->
   <rect x="100" y="320" width="800" height="300" class="domain-box" rx="10"/>
@@ -82,7 +82,7 @@
   <text x="220" y="670" class="text-small" text-anchor="middle">Vue.js UTILISE les Ports (injecte)</text>
 
   <text x="780" y="650" class="text-bold" text-anchor="middle">CÔTÉ DROIT (SECONDARY)</text>
-  <text x="780" y="670" class="text-small" text-anchor="middle">IMPLÉMENTE les Ports (Axios)</text>
+  <text x="780" y="670" class="text-small" text-anchor="middle">IMPLÉMENTE les Ports</text>
 
   <!-- ARROWS - Drawn AFTER all boxes so they appear on top -->
 
@@ -109,4 +109,3 @@
   <text x="900" y="115" fill="#f97316" font-family="Arial, sans-serif" font-size="12px" font-weight="bold">APIs externes</text>
 
 </svg>
-
