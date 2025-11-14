@@ -1,0 +1,17 @@
+{
+  "name": "archi-hexa-introduction",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/reveal.js": "^5.2.1",
+    "reveal.js": "^5.2.1",
+    "typescript": "~5.9.3",
+    "vite": "^7.2.2"
+  }
+}
