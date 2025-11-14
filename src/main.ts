@@ -6,5 +6,10 @@ import 'reveal.js/dist/theme/moon.css'
 import Reveal from 'reveal.js'
 import RevealMarkdown from "reveal.js/plugin/markdown/markdown";
 
-const deck = new Reveal()
-deck.initialize({ hash: true, slideNumber: true, plugins: [RevealMarkdown], })
+const deck = new Reveal({
+  hash: true,
+  slideNumber: true,
+  plugins: [RevealMarkdown]
+})
+
+deck.initialize()
