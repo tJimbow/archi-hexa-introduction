@@ -5,5 +5,3 @@
 - Créée par **Alistair Cockburn** en 2005
 
 #### Également appelée "Ports & Adapters"
-
-
