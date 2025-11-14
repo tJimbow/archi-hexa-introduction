@@ -1,5 +1,26 @@
-﻿# Architecture Hexagonale - Support de Formation
+﻿﻿# Architecture Hexagonale - Support de Formation
 Support de formation sur l'architecture hexagonale créé avec Reveal.js et TypeScript.
+
+## ⚠️ IMPORTANT : Clarification Ports vs Adapters
+
+**Question fréquente** : "À quoi correspondent mon port primaire et mon port secondaire ?"
+
+**Réponse rapide** : Ils n'existent pas ! 👉 **[Lire la réponse complète](./REPONSE_DIRECTE.md)**
+
+### 📚 Documentation Complémentaire
+
+Pour comprendre la distinction entre Ports et Adapters :
+
+- 🎯 **[CHEAT_SHEET.md](./CHEAT_SHEET.md)** - Aide-mémoire rapide (commencez ici !)
+- 📖 **[REPONSE_DIRECTE.md](./REPONSE_DIRECTE.md)** - Réponse détaillée avec exemples
+- 🔍 **[PORT_VS_ADAPTER.md](./PORT_VS_ADAPTER.md)** - Comparaison approfondie
+- 📚 **[README_PORTS_ADAPTERS.md](./README_PORTS_ADAPTERS.md)** - Index complet
+- 🧠 **[ARCHITECTURE_EXPLICATION.md](./ARCHITECTURE_EXPLICATION.md)** - Architecture du projet Curtailment
+
+### 🖼️ Schémas Visuels
+
+- **[port-vs-adapter.svg](./public/images/port-vs-adapter.svg)** - Distinction Port/Adapter
+- **[hexagonal-architecture.svg](./public/images/hexagonal-architecture.svg)** - Architecture complète (corrigée)
 ## 🚀 Démarrage rapide
 ### Installation
 ```bash

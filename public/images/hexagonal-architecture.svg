@@ -35,12 +35,12 @@
   <!-- PRIMARY ADAPTERS (sous l'utilisateur) -->
   <rect x="50" y="120" width="180" height="150" class="primary-box" rx="5"/>
   <text x="140" y="145" class="text-bold" text-anchor="middle">PRIMARY ADAPTERS</text>
-  <text x="140" y="165" class="text-small" text-anchor="middle">(Driving - Vue.js)</text>
+  <text x="140" y="165" class="text-small" text-anchor="middle">(infrastructure/primary)</text>
   <line x1="60" y1="175" x2="220" y2="175" stroke="#319795" stroke-width="1"/>
   <text x="70" y="195" class="text">• Vue Components</text>
-  <text x="70" y="215" class="text">• Vue Router</text>
-  <text x="70" y="235" class="text">• Composables</text>
-  <text x="70" y="255" class="text">• Pinia Stores</text>
+  <text x="70" y="215" class="text">• CurtailmentPrograms</text>
+  <text x="70" y="235" class="text">• Search.vue</text>
+  <text x="70" y="255" class="text">• Layout.vue</text>
 
   <!-- INFRASTRUCTURE EXTERNE (en haut à droite, au-dessus des Secondary Adapters) -->
   <rect x="770" y="30" width="180" height="60" class="box" rx="5"/>
@@ -50,57 +50,39 @@
   <!-- SECONDARY ADAPTERS (sous l'infrastructure externe) -->
   <rect x="770" y="120" width="180" height="150" class="secondary-box" rx="5"/>
   <text x="860" y="145" class="text-bold" text-anchor="middle">SECONDARY ADAPTERS</text>
-  <text x="860" y="165" class="text-small" text-anchor="middle">(Driven - HTTP)</text>
+  <text x="860" y="165" class="text-small" text-anchor="middle">(infrastructure/secondary)</text>
   <line x1="780" y1="175" x2="940" y2="175" stroke="#975a16" stroke-width="1"/>
-  <text x="790" y="195" class="text">• Axios Client</text>
-  <text x="790" y="215" class="text">• Fetch API</text>
-  <text x="790" y="235" class="text">• HTTP Interceptors</text>
-  <text x="790" y="255" class="text">• LocalStorage</text>
+  <text x="790" y="195" class="text">• ProgramSearch</text>
+  <text x="790" y="215" class="text">• EntityGet</text>
+  <text x="790" y="235" class="text">• ProgramCancel</text>
+  <text x="790" y="255" class="text">• (Axios HTTP)</text>
 
   <!-- DOMAIN (HEXAGONE) -->
   <rect x="100" y="320" width="800" height="300" class="domain-box" rx="10"/>
   <text x="500" y="350" class="text-bold" text-anchor="middle" font-size="18">DOMAINE (HEXAGONE)</text>
 
-  <!-- PRIMARY PORTS -->
-  <rect x="130" y="380" width="180" height="200" class="primary-box" rx="5"/>
-  <text x="220" y="405" class="text-bold" text-anchor="middle">PRIMARY PORTS</text>
-  <text x="220" y="425" class="text-small" text-anchor="middle">(Use Cases)</text>
-  <line x1="140" y1="435" x2="300" y2="435" stroke="#319795" stroke-width="1"/>
-  <text x="150" y="455" class="text">• IUserService</text>
-  <text x="150" y="475" class="text">• IProductService</text>
-  <text x="150" y="495" class="text">• IAuthService</text>
-  <text x="150" y="515" class="text-small">(Interfaces TypeScript)</text>
+  <!-- PORTS (UN SEUL ENSEMBLE AU CENTRE) -->
+  <rect x="350" y="370" width="300" height="100" class="box" rx="5" style="fill: #4a5568; stroke: #90cdf4; stroke-width: 3;"/>
+  <text x="500" y="395" class="text-bold" text-anchor="middle" font-size="16">PORTS (Interfaces)</text>
+  <text x="500" y="415" class="text-small" text-anchor="middle">(domain/*/...Port.ts)</text>
+  <line x1="360" y1="425" x2="640" y2="425" stroke="#90cdf4" stroke-width="1"/>
+  <text x="370" y="445" class="text" font-size="12">• ProgramSearchPort</text>
+  <text x="370" y="460" class="text" font-size="12">• EntityPort / ProgramCancelPort</text>
 
-  <!-- SECONDARY PORTS -->
-  <rect x="690" y="380" width="180" height="200" class="secondary-box" rx="5"/>
-  <text x="780" y="405" class="text-bold" text-anchor="middle">SECONDARY PORTS</text>
-  <text x="780" y="425" class="text-small" text-anchor="middle">(Repositories)</text>
-  <line x1="700" y1="435" x2="860" y2="435" stroke="#975a16" stroke-width="1"/>
-  <text x="710" y="455" class="text">• IUserRepository</text>
-  <text x="710" y="475" class="text">• IProductRepository</text>
-  <text x="710" y="495" class="text">• IAuthRepository</text>
-  <text x="710" y="515" class="text-small">(Interfaces TypeScript)</text>
-
-  <!-- MÉTIER (CORE) -->
-  <rect x="380" y="420" width="240" height="120" class="core-box" rx="5"/>
-  <text x="500" y="450" class="text-bold" text-anchor="middle" font-size="18">MÉTIER</text>
-  <line x1="390" y1="460" x2="610" y2="460" stroke="#6b46c1" stroke-width="1"/>
-  <text x="500" y="485" class="text" text-anchor="middle">Entités</text>
-  <text x="500" y="505" class="text" text-anchor="middle">Règles</text>
-  <text x="500" y="525" class="text" text-anchor="middle">Logique</text>
+  <!-- MÉTIER (CORE) en dessous -->
+  <rect x="350" y="490" width="300" height="110" class="core-box" rx="5"/>
+  <text x="500" y="515" class="text-bold" text-anchor="middle" font-size="16">MÉTIER (CORE)</text>
+  <text x="500" y="535" class="text-small" text-anchor="middle">(domain/*/...ts)</text>
+  <line x1="360" y1="545" x2="640" y2="545" stroke="#6b46c1" stroke-width="1"/>
+  <text x="500" y="565" class="text" text-anchor="middle" font-size="13">• Entités: Program, Entity</text>
+  <text x="500" y="585" class="text" text-anchor="middle" font-size="13">• Règles métier</text>
 
   <!-- Bottom labels -->
   <text x="220" y="650" class="text-bold" text-anchor="middle">CÔTÉ GAUCHE (PRIMARY)</text>
-  <text x="220" y="670" class="text-small" text-anchor="middle">Vue.js interagit avec l'utilisateur</text>
+  <text x="220" y="670" class="text-small" text-anchor="middle">Vue.js UTILISE les Ports (injecte)</text>
 
   <text x="780" y="650" class="text-bold" text-anchor="middle">CÔTÉ DROIT (SECONDARY)</text>
-  <text x="780" y="670" class="text-small" text-anchor="middle">Appelle .NET Core / Azure Functions</text>
-
-  <!-- Flow explanation -->
-  <text x="500" y="640" class="text-small" text-anchor="middle" fill="#fbbf24">➡ Primary Adapters → Primary Ports → Métier → Secondary Ports → Secondary Adapters ➡</text>
-
-  <!-- Legend at bottom -->
-  <text x="500" y="690" class="text-bold" text-anchor="middle" font-size="15">🎯 Les PORTS sont dans le DOMAINE - Les ADAPTATEURS implémentent les PORTS</text>
+  <text x="780" y="670" class="text-small" text-anchor="middle">IMPLÉMENTE les Ports (Axios)</text>
 
   <!-- ARROWS - Drawn AFTER all boxes so they appear on top -->
 
@@ -109,29 +91,22 @@
   <text x="30" y="110" fill="#4ade80" font-family="Arial, sans-serif" font-size="12px" font-weight="bold">Utilisateur</text>
   <text x="30" y="125" fill="#4ade80" font-family="Arial, sans-serif" font-size="12px" font-weight="bold">interagit</text>
 
-  <!-- Blue arrow: Primary Adapters call Primary Ports -->
-  <path d="M 140 270 L 140 380" stroke="#90cdf4" stroke-width="2" fill="none" marker-end="url(#arrowhead-blue)"/>
-  <text x="90" y="330" fill="#90cdf4" font-family="Arial, sans-serif" font-size="11px" font-style="italic">appellent</text>
+  <!-- Blue arrow: Primary Adapters UTILISE les Ports -->
+  <path d="M 200 270 L 380 370" stroke="#90cdf4" stroke-width="3" fill="none" marker-end="url(#arrowhead-blue)"/>
+  <text x="240" y="310" fill="#90cdf4" font-family="Arial, sans-serif" font-size="12px" font-weight="bold">utilise (inject)</text>
 
-  <!-- Blue arrow: Primary Ports use Métier -->
-  <path d="M 310 480 L 380 480" stroke="#90cdf4" stroke-width="2" fill="none" marker-end="url(#arrowhead-blue)"/>
-  <text x="340" y="470" fill="#90cdf4" font-family="Arial, sans-serif" font-size="11px" font-style="italic">utilise</text>
+  <!-- Blue arrow: Ports utilisent le Métier -->
+  <path d="M 500 470 L 500 490" stroke="#90cdf4" stroke-width="2" fill="none" marker-end="url(#arrowhead-blue)"/>
+  <text x="510" y="485" fill="#90cdf4" font-family="Arial, sans-serif" font-size="11px" font-style="italic">utilise</text>
 
-  <!-- Blue arrow: Métier uses Secondary Ports -->
-  <path d="M 620 480 L 690 480" stroke="#90cdf4" stroke-width="2" fill="none" marker-end="url(#arrowhead-blue)"/>
-  <text x="640" y="470" fill="#90cdf4" font-family="Arial, sans-serif" font-size="11px" font-style="italic">utilise</text>
-
-  <!-- Blue arrow: Secondary Adapters implement Secondary Ports -->
-  <path d="M 860 270 L 860 380" stroke="#90cdf4" stroke-width="2" fill="none" marker-end="url(#arrowhead-blue)"/>
-  <text x="875" y="330" fill="#90cdf4" font-family="Arial, sans-serif" font-size="11px" font-style="italic">implémentent</text>
+  <!-- Orange arrow: Secondary Adapters IMPLÉMENTENT les Ports -->
+  <path d="M 800 270 L 620 370" stroke="#f97316" stroke-width="3" fill="none" marker-end="url(#arrowhead-red)"/>
+  <text x="680" y="310" fill="#f97316" font-family="Arial, sans-serif" font-size="12px" font-weight="bold">implémente</text>
 
   <!-- Red arrow: Secondary Adapters call External APIs -->
   <path d="M 860 120 L 860 90" stroke="#f97316" stroke-width="3" fill="none" stroke-dasharray="5,3" marker-end="url(#arrowhead-red)"/>
   <text x="900" y="100" fill="#f97316" font-family="Arial, sans-serif" font-size="12px" font-weight="bold">Appelle</text>
   <text x="900" y="115" fill="#f97316" font-family="Arial, sans-serif" font-size="12px" font-weight="bold">APIs externes</text>
 
-  <!-- Orange flow arrow showing complete path through domain - Drawn LAST so it's on top -->
-  <path d="M 310 450 Q 500 390 690 450" stroke="#fbbf24" stroke-width="5" fill="none" stroke-dasharray="10,5" marker-end="url(#arrowhead-orange)"/>
-  <text x="500" y="380" fill="#fbbf24" font-family="Arial, sans-serif" font-size="15px" font-weight="bold" text-anchor="middle" style="text-shadow: 2px 2px 4px #1a202c, -1px -1px 2px #1a202c, 1px -1px 2px #1a202c, -1px 1px 2px #1a202c;">Flux via le domaine</text>
 </svg>
 

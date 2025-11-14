@@ -1,6 +1,4 @@
 #### Principe Fondamental
 
-> "Permettre à une application d'être pilotée de manière égale par des utilisateurs, des programmes, des tests automatisés ou des scripts batch"
-
-**Et d'être développée et testée de manière isolée de ses bases de données et autres services externes**
-
+> "Create your application to work without either a UI or a database so you can run automated regression-tests against the application, work when the database becomes unavailable, and link applications together without any user involvement"
+-- Alistair Cockburn

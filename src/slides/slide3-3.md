@@ -1,3 +1,3 @@
 ﻿### 📐 Schéma de l'Architecture Hexagonale
 
-![Architecture Hexagonale](images/hexagonal-architecture.svg)
+![Schéma générique Hexagonale](images/hexagonal-generic.svg)

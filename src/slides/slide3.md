@@ -1,7 +1,5 @@
 ### 🎯 Qu'est-ce que l'Architecture Hexagonale ?
-- Les dépendances pointent **vers l'intérieur**
-- Le domaine au **centre** de l'architecture
+- 2005 : Pattern  **"Ports & Adapters"** créée par **Alistair Cockburn**
+    - Architecture hexagonale
 - Objectif : **isoler la logique métier** des détails techniques
-- Créée par **Alistair Cockburn** en 2005
-
-#### Également appelée "Ports & Adapters"
+- Le domaine au **centre** de l'architecture
