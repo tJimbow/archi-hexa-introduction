@@ -1,11 +1,19 @@
-#### Exemples d'Adaptateurs Primaires
+##### Le Domaine => Les services/use cases
 
-**Côté gauche : Pilotent l'application (Driving)**
+```typescript
+// domain/ProgramSearchService.ts (Use Case)
+export class ProgramSearchService implements ProgramSearchPort {
+  constructor(private repository: ProgramRepositoryPort) {}
 
-- 🌐 **Controllers HTTP** (REST, GraphQL)
-- 💻 **CLI** (Command Line Interface)
-- 🧪 **Tests** (Unit, Integration, E2E)
-- ⏰ **Schedulers** (Cron jobs, background tasks)
-- 📱 **UI** (Vue.js, React, Angular...)
-
-> Tous **injectent** et **utilisent** les ports du domaine
+  async searchPrograms(params: SearchProgramsParameters)
+      : Promise<Program[]> {
+    const programs = await this.repository.fetchPrograms(params);
+    // Règles métier : filtrage, tri, validation...
+    return programs.filter(p => p.isValid());
+  }
+}
+```
+<!-- .element: class="fragment" -->
+<ul>
+  <li class="fragment">Il contient les Use Cases qui orchestrent la logique métier</li>
+</ul>

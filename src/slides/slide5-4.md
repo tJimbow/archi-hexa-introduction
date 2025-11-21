@@ -1,20 +1,9 @@
-#### Adaptateur SECONDAIRE : Implémente le Port
+##### Le Domaine => Résumé
 
-**Côté droit : Fournit l'implémentation (Driven)**<!-- .element: class="fragment" -->
-
-```typescript
-// ADAPTATEUR SECONDAIRE (Infrastructure)
-class ProgramSearch implements ProgramSearchPort {
-	constructor(private readonly http: Producer<AxiosInstance>) {}
-    
-	async for(params: SearchParams): Promise<SearchResult> {
-		// IMPLÉMENTE le contrat avec Axios
-		return this.http().post(API_URL, params);
-	}
-}
-```
-<!-- .element: class="fragment" -->
 <ul>
-  <li class="fragment">✅ <strong>Implémente</strong> l'interface définie par le domaine</li>
-  <li class="fragment">✅ Peut être remplacé facilement (ex: Axios → Fetch)</li>
+  <li class="fragment">✅ Le domaine contient les entités avec les règles métiers</li>
+  <li class="fragment">✅ Le domaine définit les Ports (Primary et Secondary) avec ses propres types</li>
+  <li class="fragment">✅ Ne connaît <strong>pas</strong> l'implémentation concrète</li>
+  <li class="fragment">✅ Il contient les Use Cases/Services qui orchestrent la logique métier</li>
+  <li class="fragment">❌ Ne doit <strong>jamais</strong> importer quoi que ce soit de l'infrastructure</li>
 </ul>

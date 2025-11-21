@@ -1,21 +1,20 @@
-#### Le PORT : 
-
-**Interface définie dans le Domaine** <!-- .element: class="fragment" -->
+##### Le Domaine => Les entités
 
 ```typescript
-interface ProgramSearchPort {
-  for(params: SearchParams): Promise<SearchResult>;
-}
-```
-<!-- .element: class="fragment" -->
-```typescript
-export interface ProgramCancelPort {
-	for(programs: ProgramIdsToCancelByEntCodeAndType)
-	    : Promise<CancelledProgram[]>;
+// domain/Program.ts (Entité métier)
+export class Program {
+  constructor(
+    public id: string,
+    public name: string,
+    public startDate: Date
+  ) {}
+
+  isValid(): boolean {
+    return this.startDate > new Date();
+  }
 }
 ```
 <!-- .element: class="fragment" -->
 <ul>
-  <li class="fragment"><strong>Utilisé par</strong> : Adaptateurs Primaires (UI, Controllers) via injection de dépendance</li>
-  <li class="fragment"><strong>Implémenté par</strong> : Adaptateurs Secondaires (Infrastructure)</li>
+  <li class="fragment">Le domaine contient les entités avec les règles métiers</li>
 </ul>

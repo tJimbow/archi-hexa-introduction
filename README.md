@@ -20,7 +20,7 @@ Pour comprendre la distinction entre Ports et Adapters :
 ### 🖼️ Schémas Visuels
 
 - **[port-vs-adapter.svg](./public/images/port-vs-adapter.svg)** - Distinction Port/Adapter
-- **[hexagonal-architecture.svg](./public/images/hexagonal-architecture.svg)** - Architecture complète (corrigée)
+- **[hexagonal-architecture.svg](public/images/hexagonal-simple-example.svg)** - Architecture complète (corrigée)
 ## 🚀 Démarrage rapide
 ### Installation
 ```bash

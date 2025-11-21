@@ -3,6 +3,7 @@ import 'reveal.js/dist/reveal.css'
 // node_modules/reveal.js/dist/theme
 //  beige, black, blood, league, moon, night, serif, simple, ...
 import 'reveal.js/dist/theme/moon.css'
+import './style.css'
 import Reveal from 'reveal.js'
 import RevealMarkdown from "reveal.js/plugin/markdown/markdown";
 
@@ -12,4 +13,5 @@ const deck = new Reveal({
   plugins: [RevealMarkdown]
 })
 
-deck.initialize()
+deck.initialize({
+})

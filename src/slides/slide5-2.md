@@ -1,20 +1,20 @@
-#### Adaptateur PRIMAIRE : Utilise le Port
-
-**Côté gauche : Pilote l'application (Driving)**<!-- .element: class="fragment" -->
+##### Le Domaine => Les ports
 
 ```typescript
-// Vue.js Component - ADAPTATEUR PRIMAIRE
-const programSearch = inject<ProgramSearchPort>(PROGRAM_SEARCH);
+// domain/ProgramSearchPort.ts (Primary Port)
+export interface ProgramSearchPort {
+  searchPrograms(query: string): Promise<Program[]>;
+}
 ```
 <!-- .element: class="fragment" -->
 ```typescript
-async function search() {
-  // UTILISE l'interface (le port)
-  const results = await programSearch.for(searchParams);
+// domain/ProgramRepositoryPort.ts (Secondary Port)
+export interface ProgramRepositoryPort {
+  fetchPrograms(query: string): Promise<Program[]>;
 }
 ```
 <!-- .element: class="fragment" -->
 <ul>
-  <li class="fragment">✅ <strong>Injecte</strong> et <strong>consomme</strong> le port</li>
-  <li class="fragment">✅ Ne connaît <strong>pas</strong> l'implémentation concrète</li>
+  <li class="fragment">Le domaine définit les Ports (Primary et Secondary) avec ses propres types</li>
+  <li class="fragment">Ne connaît <strong>pas</strong> l'implémentation concrète</li>
 </ul>

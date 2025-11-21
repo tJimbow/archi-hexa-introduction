@@ -1,8 +1,11 @@
-### ⚠️ Inconvénients et Défis
+#### Flux Complet (Front-end)
 
-- 📈 **Complexité initiale** : plus de fichiers et d'interfaces
-- ⏱️ **Temps de développement** : peut sembler plus long au début
-- 🎓 **Courbe d'apprentissage** : nécessite un changement de mentalité
-- 🔧 **Sur-engineering** : peut être excessif pour des projets très simples
-- 👥 **Adhésion de l'équipe** : tout le monde doit comprendre les concepts
+1. **Événement utilisateur** (clic, formulaire) dans le composant Vue
+2. Le composant appelle le `CreateUserUseCase` (port entrant)
+3. Le use case contient la **logique métier**
+4. Le use case utilise `UserRepository` (port sortant)
+5. L'implémentation `HttpUserRepository` (adaptateur sortant) appelle l'API backend
+6. La réponse remonte à travers les couches vers le composant
+
+**Le composant UI ne connaît ni l'API HTTP ni la logique métier !**
 
