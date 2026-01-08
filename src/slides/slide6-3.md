@@ -5,12 +5,12 @@
 ```typescript
 // ADAPTATEUR SECONDAIRE (Infrastructure)
 class ProgramSearch implements ProgramSearchPort {
-	constructor(private readonly http: Producer<AxiosInstance>) {}
+    constructor(private readonly http: Producer<AxiosInstance>) {}
     
-	async for(params: SearchParams): Promise<SearchResult> {
-		// IMPLÉMENTE le contrat avec Axios
-		return this.http().post(API_URL, params);
-	}
+    async for(params: SearchParams): Promise<SearchResult> {
+        // IMPLÉMENTE le contrat avec Axios
+        return this.http().post(API_URL, params);
+    }
 }
 ```
 <!-- .element: class="fragment" -->

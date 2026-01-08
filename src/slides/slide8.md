@@ -1,4 +1,3 @@
-### 💡 Exemple Concret
+### ⚡ Exemple Back
 
-#### Cas d'usage : Création d'un utilisateur
-
+#### Type de mise en œuvre : Fonction Azure
