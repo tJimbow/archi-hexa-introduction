@@ -14,13 +14,13 @@
     <li class="fragment"><strong>Ports Driven</strong> :
         <ul>
             <li>Souvent avec le préfixe « Inbound » ou « Outbound » pour indiquer le sens du port.</li>
-            <li class="fragment">Toujours avec le suffixe « Port » pour indiquer comme un port <em>driven</em>.</li>
+            <li class="fragment">Toujours avec le suffixe « Port » pour indiquer que c'est un port <em>driven</em>.</li>
         </ul>
     </li>
     <li class="fragment"><strong>Ports Driving</strong> :
         <ul>
             <li>Sans préfixe/suffixe.</li>
-            <li class="fragment">Les contrat pour les objets qui communique en utilisant nos ports <em>driven</em>.</li>
+            <li class="fragment">Les contrats pour les objets qui communiquent en utilisant nos ports <em>driven</em>.</li>
         </ul>
     </li>
     <li class="fragment"><strong>Objets de domaine</strong> :

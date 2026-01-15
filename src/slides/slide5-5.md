@@ -1,4 +1,4 @@
-##### Infrastructure => Secondary Adapter
+##### Infrastructure => Adaptateurs secondaires
 
 ```typescript
 // infrastructure/secondary/ProgramResponse.ts (Response)
