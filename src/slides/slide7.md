@@ -1,6 +1,6 @@
 ### 📦 Structure de Projet
 
-```
+```text
 src/
 ├── domain/
 │   ├── entities/
