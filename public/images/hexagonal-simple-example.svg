@@ -93,7 +93,7 @@
 
   <!-- Blue arrow: Primary Adapters UTILISE les Ports -->
   <path d="M 200 270 L 380 370" stroke="#90cdf4" stroke-width="3" fill="none" marker-end="url(#arrowhead-blue)"/>
-  <text x="240" y="310" fill="#90cdf4" font-family="Arial, sans-serif" font-size="12px" font-weight="bold">utilise (inject)</text>
+  <text x="220" y="310" fill="#90cdf4" font-family="Arial, sans-serif" font-size="12px" font-weight="bold">utilise</text>
 
   <!-- Blue arrow: Ports utilisent le Métier -->
   <path d="M 500 470 L 500 490" stroke="#90cdf4" stroke-width="2" fill="none" marker-end="url(#arrowhead-blue)"/>
@@ -101,7 +101,7 @@
 
   <!-- Orange arrow: Secondary Adapters IMPLÉMENTENT les Ports -->
   <path d="M 800 270 L 620 370" stroke="#f97316" stroke-width="3" fill="none" marker-end="url(#arrowhead-red)"/>
-  <text x="680" y="310" fill="#f97316" font-family="Arial, sans-serif" font-size="12px" font-weight="bold">implémente</text>
+  <text x="650" y="310" fill="#f97316" font-family="Arial, sans-serif" font-size="12px" font-weight="bold">implémente</text>
 
   <!-- Red arrow: Secondary Adapters call External APIs -->
   <path d="M 860 120 L 860 90" stroke="#f97316" stroke-width="3" fill="none" stroke-dasharray="5,3" marker-end="url(#arrowhead-red)"/>

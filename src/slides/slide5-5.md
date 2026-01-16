@@ -11,7 +11,7 @@ interface ProgramResponse {
 ```typescript
 // infrastructure/secondary/ProgramRepositoryAdapter.ts (Secondary Adapter)
 export class ProgramRepositoryAdapter implements ProgramRepositoryPort {
-	constructor(private httpClient: AxiosInstance) {}
+	constructor(private httpClient: HttpInstance) {}
     
 	async fetchPrograms(params: SearchProgramParameters): Promise<Program[]> {
 		const response = await this.httpClient.get<ProgramResponse[]>('/api/programs', {
@@ -24,7 +24,7 @@ export class ProgramRepositoryAdapter implements ProgramRepositoryPort {
 ```
 <!-- .element: class="fragment" -->
 <ul>
-  <li class="fragment">C'est l'ADAPTER qui fait la transformation des types externes vers les types du domaine</li>
+  <li class="fragment">C'est l'adaptateur qui fait la transformation des types externes vers les types du domaine</li>
   <li class="fragment">L'infrastructure dépend du domaine : elle s'adapte aux interfaces définies par le domaine</li>
   <li class="fragment">Implémente le port secondaire</li>
   <li class="fragment">Elle connaît les types externes (ProgramResponse) et fait la transformation</li>

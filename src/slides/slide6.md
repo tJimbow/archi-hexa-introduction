@@ -1,3 +1,3 @@
-### 🔌 Domain & Infrastructure : Détails
-#### Example simplifié
+### 🔌 Domaine & Infrastructure : Détails
+#### Exemple confronté à la réalité
 

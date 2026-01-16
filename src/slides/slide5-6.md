@@ -5,7 +5,7 @@
 const programSearchService 
     = inject<ProgramSearchPort>('programSearchService');
 
-const searchPrograms = async (query: string) => {
+const foundPrograms = async (query: string) => {
   const programs = await programSearchService.searchPrograms(query);
 };
 ```

@@ -12,5 +12,5 @@
 #### 📚 Pour aller plus loin
 - "Hexagonal Architecture" - Alistair Cockburn
 - "Clean Architecture" - Robert C. Martin
-- Domain-Driven Design (DDD)
+- "Domain-Driven Design: Tackling Complexity" aussi appelé Blue book - Eric Evans
 

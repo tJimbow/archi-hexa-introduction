@@ -1,2 +1,2 @@
-### 🔌 Domain & Infrastructure : Détails 
-#### Example complet
+### 🔌 Domaine & Infrastructure : Détails 
+#### Exemple complet
