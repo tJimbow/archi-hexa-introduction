@@ -5,7 +5,7 @@
 // Port primaire
 // domain/ProgramSearchPort.ts 
 export interface ProgramSearchPort {
-  searchPrograms(query: string): Promise<Program[]>;
+  searchPlannedPrograms(params: SearchProgramsParameters): Promise<Program[]>;
 }
 ```
 <!-- .element: class="fragment" -->
@@ -13,7 +13,7 @@ export interface ProgramSearchPort {
 // Port secondaire
 // domain/ProgramRepositoryPort.ts
 export interface ProgramRepositoryPort {
-  fetchPrograms(query: string): Promise<Program[]>;
+  fetchPrograms(params: SearchProgramsParameters): Promise<Program[]>;
 }
 ```
 <!-- .element: class="fragment" -->

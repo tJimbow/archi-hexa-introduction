@@ -9,7 +9,7 @@ export class Program {
     public startDate: Date
   ) {}
 
-  isValid(): boolean {
+  isPlanned(): boolean {
     return this.startDate > new Date();
   }
 }

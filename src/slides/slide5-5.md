@@ -18,7 +18,7 @@ export class ProgramRepositoryAdapter implements ProgramRepositoryPort {
 			params: toApiParams(params)
 		});
 		
-		return response.data.map(data => Program.fromResponse(data));
+		return response.data.map(data => fromResponse(data));
 	}
 }
 ```

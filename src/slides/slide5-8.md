@@ -3,7 +3,7 @@
 ```typescript
 // main.ts (Bootstrap de l'application)
 const httpClient 
-    = axios.create({ baseURL: 'https://api.example.com' });
+    = axios.create({ baseURL: 'https://api.example.com' }) as HttpClient;
 const programRepository 
     = new ProgramRepositoryAdapter(httpClient);
 const programSearchService 

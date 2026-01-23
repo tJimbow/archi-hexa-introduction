@@ -7,7 +7,7 @@
             <li>Le « quoi ».</li>
         </ul><br/>
     </li>
-    <li class="fragment"><strong>Infrastructure</strong> : Les adapateurs et les dépendants de ces adaptateurs.
+    <li class="fragment"><strong>Infrastructure</strong> : Les adaptateurs et les dépendances de ces adaptateurs.
         <ul>
             <li>Le « comment ».</li>
         </ul><br/>

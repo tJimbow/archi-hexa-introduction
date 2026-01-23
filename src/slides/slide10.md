@@ -11,6 +11,6 @@
 
 #### 📚 Pour aller plus loin
 - "Hexagonal Architecture" - Alistair Cockburn
-- "Clean Architecture" - Robert C. Martin
 - "Domain-Driven Design: Tackling Complexity" aussi appelé Blue book - Eric Evans
-
+- "Design Patterns - Elements of reusable object-oriented software" 
+                     Erich Gamma/Richard Helm/Ralph Johnson/John Vlissides
